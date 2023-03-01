@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores 3</title>
+    <style>
+        p {
+            color: salmon;
+        }
+
+        p::first-letter {
+            color: teal;
+        }
+
+        p::before {
+            content: "✨";
+        }
+
+        p::after {
+            content: "✨";
+        }
+
+        p:hover {
+            color: skyblue;
+        }
+
+        div p:nth-child(2) {
+            color: violet;
+        }
+
+        ::placeholder {
+            color: tomato;
+        }
+        a:link {
+            color: red;
+        }
+        
+        div:not(.negro) {
+            color: blue;
+        }
+
+        div:nth-child(2) {
+            color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <p>Hola</p>
+    <div>
+        <p>Platzi</p>
+        <p>Master</p>
+        <p>Lo mejor</p>
+        <input type="text" placeholder="nombre"><br>
+        <a href="#">Clickeame</a>
+    </div>
+    <div>Azul</div>
+    <div>Azul</div>
+    <div class="negro">negro</div>
+    <div>Azul</div>
+    <div>Azul</div>
+
+    <div>1 Negro</div>
+    <div>2 Azul</div>
+    <div>3 Negro</div>
+    <div>4 Negro</div>
+    <div>5 Negro</div>
+</body>
+</html>
